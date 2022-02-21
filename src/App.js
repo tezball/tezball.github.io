@@ -1,23 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import TopNav from "./components/TopNav";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import About from "./pages/About";
+import Home from "./pages/Home";
+import Missing404 from "./pages/Missing404";
+import DesignPattrens from "./pages/designPattrens/DesignPattrens";
+import Creational from "./pages/designPattrens/creational/Creational";
+import DesignPattrensLayout from "./pages/designPattrens/DesignPattrensLayout";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <BrowserRouter>
+        <TopNav />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/Home" element={<Home />} />
+
+          <Route path="/Design-Pattrens" element={<DesignPattrensLayout />}>
+            <Route index element={<DesignPattrens />}></Route>
+            <Route index path="Creational" element={<Creational />}></Route>
+            <Route path="Structural" element={<Home />}></Route>
+            <Route path="Behavioral" element={<Home />}></Route>
+          </Route>
+
+          <Route path="/about" element={<About />} />
+          <Route path="/*" element={<Missing404 />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
