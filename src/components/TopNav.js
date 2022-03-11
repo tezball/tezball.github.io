@@ -83,6 +83,32 @@ function TopNav() {
                 <Link to="Design-Pattrens/Behavioral/Visitor">Visitor</Link>
               </li>
             </ul>
+            <li>
+              <Link to="Design-Pattrens/Structural">Structural</Link>
+            </li>
+            <ul>
+              <li>
+                <Link to="Design-Pattrens/Structural/Adapter">Adapter</Link>
+              </li>
+              <li>
+                <Link to="Design-Pattrens/Structural/Bridge">Bridge</Link>
+              </li>
+              <li>
+                <Link to="Design-Pattrens/Structural/Composite">Composite</Link>
+              </li>
+              <li>
+                <Link to="Design-Pattrens/Structural/Decorator">Decorator</Link>
+              </li>
+              <li>
+                <Link to="Design-Pattrens/Structural/Facade">Facade</Link>
+              </li>
+              <li>
+                <Link to="Design-Pattrens/Structural/Flyweight">Flyweight</Link>
+              </li>
+              <li>
+                <Link to="Design-Pattrens/Structural/Proxy">Proxy</Link>
+              </li>
+            </ul>
           </ul>
         </li>
         <li>

@@ -24,6 +24,14 @@ import State from "./pages/designPattrens/behavioral/State";
 import Strategy from "./pages/designPattrens/behavioral/Strategy";
 import TemplateMethod from "./pages/designPattrens/behavioral/TemplateMethod";
 import Visitor from "./pages/designPattrens/behavioral/Visitor";
+import Structural from "./pages/designPattrens/structual/Structural";
+import Adapter from "./pages/designPattrens/structual/Adapter";
+import Bridge from "./pages/designPattrens/structual/Bridge";
+import Composite from "./pages/designPattrens/structual/Composite";
+import Decorator from "./pages/designPattrens/structual/Decorator";
+import Facade from "./pages/designPattrens/structual/Facade";
+import Flyweight from "./pages/designPattrens/structual/Flyweight";
+import Proxy from "./pages/designPattrens/structual/Proxy";
 
 function App() {
   return (
@@ -55,7 +63,6 @@ function App() {
             path="/Design-Pattrens/Creational/Singleton"
             element={<Singleton />}
           />
-          <Route path="/Design-Pattrens/Structural" element={<Home />} />
           <Route path="/Design-Pattrens/Behavioral" element={<Behavioral />} />
           <Route
             path="/Design-Pattrens/Behavioral/Chain-of-Responsibility"
@@ -98,6 +105,32 @@ function App() {
             path="/Design-Pattrens/Behavioral/Visitor"
             element={<Visitor />}
           />
+          <Route path="/Design-Pattrens/Structural" element={<Structural />} />
+          <Route
+            path="/Design-Pattrens/Structural/Adapter"
+            element={<Adapter />}
+          />
+          <Route
+            path="/Design-Pattrens/Structural/Bridge"
+            element={<Bridge />}
+          />
+          <Route
+            path="/Design-Pattrens/Structural/Composite"
+            element={<Composite />}
+          />
+          <Route
+            path="/Design-Pattrens/Structural/Decorator"
+            element={<Decorator />}
+          />
+          <Route
+            path="/Design-Pattrens/Structural/Facade"
+            element={<Facade />}
+          />
+          <Route
+            path="/Design-Pattrens/Structural/Flyweight"
+            element={<Flyweight />}
+          />
+          <Route path="/Design-Pattrens/Structural/Proxy" element={<Proxy />} />
           <Route path="/About" element={<About />} />
           <Route path="/*" element={<Missing404 />} />
         </Routes>
