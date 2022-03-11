@@ -20,7 +20,7 @@ function App() {
 
           <Route path="/Design-Pattrens" element={<DesignPattrensLayout />}>
             <Route index element={<DesignPattrens />}></Route>
-            <Route index path="Creational" element={<Creational />}></Route>
+            <Route path="Creational" element={<Creational />}></Route>
             <Route path="Structural" element={<Home />}></Route>
             <Route path="Behavioral" element={<Home />}></Route>
           </Route>
