@@ -2,10 +2,192 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tezball - Projects</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background: #ffffff;
+            color: #1f2328;
+            min-height: 100vh;
+        }
+
+        header {
+            border-bottom: 1px solid #d1d9e0;
+            padding: 2rem 1.5rem;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        header h1 a {
+            color: #1f2328;
+            text-decoration: none;
+        }
+
+        header h1 a:hover {
+            color: #0969da;
+        }
+
+        header p {
+            color: #656d76;
+            font-size: 1.1rem;
+        }
+
+        main {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem 4rem;
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 1rem;
+        }
+
+        .project-card {
+            background: #f6f8fa;
+            border: 1px solid #d1d9e0;
+            border-radius: 6px;
+            padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            transition: border-color 0.2s;
+        }
+
+        .project-card:hover {
+            border-color: #0969da;
+        }
+
+        .project-card h2 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .project-card h2 a {
+            color: #0969da;
+            text-decoration: none;
+        }
+
+        .project-card h2 a:hover {
+            text-decoration: underline;
+        }
+
+        .project-card .description {
+            color: #656d76;
+            font-size: 0.9rem;
+            flex-grow: 1;
+            margin-bottom: 1rem;
+        }
+
+        .project-card .meta {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            font-size: 0.8rem;
+            color: #656d76;
+        }
+
+        .language {
+            display: flex;
+            align-items: center;
+            gap: 0.35rem;
+        }
+
+        .language-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            display: inline-block;
+        }
+
+        .lang-dart       { background: #00B4AB; }
+        .lang-html       { background: #e34c26; }
+        .lang-java       { background: #b07219; }
+        .lang-javascript { background: #f1e05a; }
+        .lang-scala      { background: #c22d40; }
+
+        footer {
+            text-align: center;
+            padding: 2rem 1.5rem;
+            color: #656d76;
+            font-size: 0.85rem;
+            border-top: 1px solid #d1d9e0;
+        }
+
+        footer a {
+            color: #0969da;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-<h1>Works</h1>
-jjjm
+    <header>
+        <h1><a href="https://github.com/tezball">tezball</a></h1>
+        <p>Projects on GitHub</p>
+    </header>
+    <main>
+        <div class="projects-grid">
+            <div class="project-card">
+                <h2><a href="https://github.com/tezball/fishing-journals">fishing-journals</a></h2>
+                <p class="description">A Flutter mobile app for logging fishing trips, tracking catches, and recording your experiences on the water.</p>
+                <div class="meta">
+                    <span class="language"><span class="language-dot lang-dart"></span> Dart</span>
+                </div>
+            </div>
+            <div class="project-card">
+                <h2><a href="https://github.com/tezball/python-playbook">python-playbook</a></h2>
+                <p class="description">A hands-on Python learning project featuring a Flask e-commerce API with MongoDB, Domain-Driven Design, Kafka event streaming, and Docker containerization.</p>
+                <div class="meta">
+                    <span class="language"><span class="language-dot lang-html"></span> HTML</span>
+                </div>
+            </div>
+            <div class="project-card">
+                <h2><a href="https://github.com/tezball/scala-playbook">scala-playbook</a></h2>
+                <p class="description">An interactive Scala 3 learning platform built on Play Framework, PostgreSQL, and Kafka that teaches concepts like pattern matching, Futures, and event sourcing through e-commerce scenarios.</p>
+                <div class="meta">
+                    <span class="language"><span class="language-dot lang-html"></span> HTML</span>
+                </div>
+            </div>
+            <div class="project-card">
+                <h2><a href="https://github.com/tezball/my-island">my-island</a></h2>
+                <p class="description">A campsite registry application for browsing, registering, and managing campsites.</p>
+                <div class="meta"></div>
+            </div>
+            <div class="project-card">
+                <h2><a href="https://github.com/tezball/forever-home">forever-home</a></h2>
+                <p class="description">A pet adoption platform that connects pet owners with rescue organizations for rehoming animals. Built with Spring Boot, PostgreSQL, S3, and a full observability stack.</p>
+                <div class="meta">
+                    <span class="language"><span class="language-dot lang-java"></span> Java</span>
+                </div>
+            </div>
+            <div class="project-card">
+                <h2><a href="https://github.com/tezball/tezball.github.io">tezball.github.io</a></h2>
+                <p class="description">This portfolio site and a React-based reference for software design patterns including creational, behavioral, and structural patterns.</p>
+                <div class="meta">
+                    <span class="language"><span class="language-dot lang-javascript"></span> JavaScript</span>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>View all projects on <a href="https://github.com/tezball">GitHub</a></p>
+    </footer>
 </body>
 </html>
